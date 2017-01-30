@@ -29,4 +29,4 @@ void MessageBuffer::print(std::ostream& out)
 	for (MessageContainer::size_type i = 0; i < mBuffer.size(); ++i) {
 		out << mBuffer[i] + "\r\n";
 	}
-}
+}

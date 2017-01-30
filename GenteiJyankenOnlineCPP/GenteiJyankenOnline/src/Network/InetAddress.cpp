@@ -49,4 +49,4 @@ InetAddress& InetAddress::operator = (const std::string& host)
 unsigned long InetAddress::getAddress() const
 {
 	return mIPAddress;
-}
+}

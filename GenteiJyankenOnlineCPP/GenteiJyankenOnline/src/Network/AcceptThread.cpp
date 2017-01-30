@@ -58,4 +58,4 @@ void AcceptThread::end()
 bool AcceptThread::isEnd()
 {
 	return mIsEnd;
-}
+}

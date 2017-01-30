@@ -26,4 +26,4 @@ private:
 	// I—¹ƒtƒ‰ƒO
 	bool mIsEnd;
 };
-#endif
+#endif

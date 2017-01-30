@@ -153,4 +153,4 @@ InetSocketAddress SocketImpl::getLocalInetSocketAddress() const
 bool SocketImpl::isConnected() const
 {
 	return mSocket != INVALID_SOCKET;
-}
+}

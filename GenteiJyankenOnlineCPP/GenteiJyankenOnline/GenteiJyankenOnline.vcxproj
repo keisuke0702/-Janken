@@ -90,10 +90,12 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>false</SDLCheck>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\gslib_2015\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\gslib_2015\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -121,12 +123,14 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>false</SDLCheck>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\gslib_2015\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\gslib_2015\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -148,6 +152,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Game\Game.cpp" />
+    <ClCompile Include="src\Game\JyankenGame.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Network\AcceptThread.cpp" />
     <ClCompile Include="src\Network\ChatClientThread.cpp" />
@@ -155,7 +161,7 @@
     <ClCompile Include="src\Network\ClientThread.cpp" />
     <ClCompile Include="src\Network\CriticalSection.cpp" />
     <ClCompile Include="src\Network\DatagramSocket.cpp" />
-    <ClCompile Include="src\Network\DatagramSoocketImpl.cpp" />
+    <ClCompile Include="src\Network\DatagramSocketImpl.cpp" />
     <ClCompile Include="src\Network\InetAddress.cpp" />
     <ClCompile Include="src\Network\InetSocketAddress.cpp" />
     <ClCompile Include="src\Network\MessageBuffer.cpp" />
@@ -166,6 +172,9 @@
     <ClCompile Include="src\Network\Thread.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Def.h" />
+    <ClInclude Include="src\Game\Game.h" />
+    <ClInclude Include="src\AssetID.h" />
     <ClInclude Include="src\Network\AcceptThread.h" />
     <ClInclude Include="src\Network\ChatClientThread.h" />
     <ClInclude Include="src\Network\ChatMain1.h" />
@@ -176,6 +185,7 @@
     <ClInclude Include="src\Network\InetAddress.h" />
     <ClInclude Include="src\Network\InetSocketAddress.h" />
     <ClInclude Include="src\Network\IRunnable.h" />
+    <ClInclude Include="src\Game\JyankenGame.h" />
     <ClInclude Include="src\Network\MessageBuffer.h" />
     <ClInclude Include="src\Network\ServerSocket.h" />
     <ClInclude Include="src\Network\ServerThread.h" />

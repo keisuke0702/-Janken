@@ -33,4 +33,4 @@ private:
 	std::auto_ptr<SocketImpl> mImpl;
 };
 
-#endif
+#endif

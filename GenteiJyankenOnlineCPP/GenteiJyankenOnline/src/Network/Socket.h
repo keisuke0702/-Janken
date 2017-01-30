@@ -25,7 +25,8 @@ public:
 	// ソケットの接続．
 	void connect(const InetSocketAddress& address);
 	// ソケットの接続．
-	void connect(const InetAddress& address, int port);	// ソケットの接続．
+	void connect(const InetAddress& address, int port);
+	// ソケットの接続．
 	void connect(const std::string& host, int port);
 	// ソケットを閉じる．
 	void close();

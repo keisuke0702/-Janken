@@ -80,4 +80,4 @@ void ChatClientThread::end()
 	mSocket.close();
 	// スレッドの終了を待つ
 	join();
-}
+}

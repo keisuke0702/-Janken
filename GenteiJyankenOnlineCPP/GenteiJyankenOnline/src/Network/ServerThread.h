@@ -29,12 +29,14 @@ public:
 	// 終了しているか調べる
 	bool isEnd();
 	// クライアントにメッセージを送信
-	void sendClient(const std::string& message);
+	void sendClient(const std::string& message);
+
 private:
 	// クライアントスレッドのポインタ型
 	typedef std::shared_ptr<ClientThread> ClientThreadPtr;
 	//クライアントスレッドのコンテナ型
-	typedef std::list<ClientThreadPtr> ClientContainer;	// ポート番号
+	typedef std::list<ClientThreadPtr> ClientContainer;
+	// ポート番号
 	int mPort;
 	// 終了フラグ
 	bool mIsEnd;

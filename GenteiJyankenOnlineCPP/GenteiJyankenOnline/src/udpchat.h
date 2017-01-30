@@ -93,7 +93,8 @@ void UDPClient()
 		}
 		// 受信データの表示
 		std::cout << "受信--> " << recvMessage << std::endl;
-	}
+	}
+
 }
 // チャットプログラムメイン関数
 void main_function_udp()

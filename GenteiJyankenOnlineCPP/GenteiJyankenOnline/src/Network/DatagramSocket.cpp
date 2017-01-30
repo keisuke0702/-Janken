@@ -33,4 +33,4 @@ int DatagramSocket::receive(void* buffer, int size, InetSocketAddress& addr)
 void DatagramSocket::close()
 {
 	mImpl->close();
-}
+}
