@@ -1,0 +1,28 @@
+div.frame{
+	 border-color: red;
+	 border-style:dotted; 
+	 border-width : 5px;
+}
+
+.systemName{
+	color : red;
+	font-size:12px;
+}
+
+.systemMessage{
+	color : red;
+	font-size:24px;
+}
+
+.userName{
+	font-size:12px;
+}
+
+.userMessage{
+	font-size:24px;
+}
+
+.date{
+	color: gray;
+	font-size: 12px;
+}
